@@ -1,0 +1,98 @@
+body {
+    font-family: Garamond, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #acd8ac;
+}
+
+.main-header {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.main-header::before,
+.main-header::after {
+    content: '⭐';
+    color: #ff0;
+    position: absolute;
+}
+
+.main-header::before {
+    left: 175px;
+    top: 0;
+}
+
+.main-header::after {
+    right: 175px;
+    top: 0;
+}
+
+.intro-paragraph {
+    font-size: 20px;
+    color: #666;
+    margin: 50px;
+    position: relative;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '“';
+    font-size: 40px;
+    color: #f74343;
+    position: absolute;
+}
+
+.intro-paragraph::before {
+    left:  -20px;
+    top:  -10px;
+}
+
+.intro-paragraph::after {
+    content: '”';
+    right: 1280px;
+    top:  -10px;
+}
+
+.cta-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #70944f;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    position: relative;
+}
+
+.cta-button:hover {
+    background-color: #70c500;
+}
+
+.cta-button::before {
+    content: '👉';
+    font-size: 20px;
+    position: absolute;
+}
+
+.cta-button::after {
+    content: '👈';
+    font-size: 20px;
+    position: absolute;
+}
+
+.cta-button::before {
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-button::after {
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
